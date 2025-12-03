@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Center the app */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Main container */
+.app-container {
+  background: white;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input and button row */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background: #43a047;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.task-item span {
+  flex: 1;
+  color: #555;
+}
+
+/* Action buttons */
+.task-item button {
+  margin-left: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-item .edit-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.task-item .edit-btn:hover {
+  background: #e68900;
+}
+
+.task-item .delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.task-item .delete-btn:hover {
+  background: #d32f2f;
+}
